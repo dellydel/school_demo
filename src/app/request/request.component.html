@@ -1,0 +1,46 @@
+<div class="container ">
+    <h2>Request Form</h2>
+    <div class="form-horizontal">
+
+        <div class="form-group form-inline">
+            <label class="control-label col-md-2">First Name</label>
+            <input appUniqueValidator="hello" required #firstName="ngModel" type="text" class="form-control col-md-10" [(ngModel)]="request.firstName">
+            <!-- <span *ngIf='firstName.errors?.required'>Error</span>
+            <span *ngIf='firstName.errors?.isNotUnique'>Not Unique</span> -->
+        </div>
+
+        <div class="form-group form-inline">
+            <label class="control-label col-md-2">Last Name</label>
+            <input type="text" class="form-control col-md-10" [(ngModel)]="request.lastName">
+        </div>
+
+        <div class="form-group form-inline">
+            <label class="control-label col-md-2">Phone Number</label>
+            <input type="text" class="form-control col-md-10" [(ngModel)]="request.phoneNumber">
+        </div>
+
+        <div class="form-group form-inline">
+            <label class="control-label col-md-2">City</label>
+            <input type="text" class="form-control col-md-10" [(ngModel)]="request.city">
+        </div>
+
+        <div class="form-group form-inline">
+            <label class="control-label col-md-2">State</label>
+            <input type="text" class="form-control col-md-10" [(ngModel)]="request.state">
+        </div>
+
+        <div class="form-group form-inline">
+            <label class="control-label col-md-2">Email Address</label>
+            <input type="text" class="form-control col-md-10" [(ngModel)]="request.emailAddress">
+        </div>
+
+        <div class="form-group form-inline">
+            <label class="control-label col-md-2">Courses</label>
+            <input type="text" class="form-control col-md-10" [(ngModel)]="request.course">
+        </div>
+
+        <button class="btn btn-primary" (click)="submitRequest()">Submit</button>
+        <button class="btn btn-success">Reset</button>
+
+    </div>
+</div>
