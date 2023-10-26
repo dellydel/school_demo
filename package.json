@@ -34,7 +34,7 @@
     "@angular/router": "~4.0.0",
     "angular-in-memory-web-api": "^0.3.2",
     "core-js": "^2.6.5",
-    "jshint": "^2.10.1",
+    "jshint": "^2.13.6",
     "rxjs": "5.0.1",
     "systemjs": "0.19.40",
     "zone.js": "^0.8.29"
